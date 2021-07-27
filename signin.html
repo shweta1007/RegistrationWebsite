@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Sign in form
+</title>
+ <link rel="stylesheet" href="style1.css">
+ <script>
+    function takevalues(){
+      var email = document.getElementById("Email").value;
+      var password = document.getElementById("Password").value;
+        
+      document.write("YOUR INFO <br>"+"Email : "+email+"<br>");
+      document.write("Password : "+password+"<br>");
+    
+    }
+ </script>
+
+<body>
+    <div class="container">
+        <form>
+            <h1> Log in</h1>
+            <div class="form-group">
+                <label for="Email">Email id :</label>
+                <input type="text" class="form-control" id="Email" placeholder="Enter your email"
+                    required /><br>
+            </div>
+            <div class="form-group">
+                <label for="Password">Password :</label>
+                <input type="password" class="form-control" id="Password" placeholder="Enter your password"
+                    required /><br>
+            </div>
+            <button class="btn" onclick="takevalues()">login</button>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style4.css">
+  <script>
+    function takevalues(){
+      var fname = document.getElementById("Fname").value;
+      var lname = document.getElementById("Lname").value;
+      var email = document.getElementById("Email").value;
+      var password = document.getElementById("Password").value;
+      var cmpassword = document.getElementById("Cmpassword").value;
+
+      document.write("YOUR INFO <br>"+"First Name : "+fname+"<br>");
+      document.write("Last Name : "+lname+"<br>");
+      document.write("Email : "+email+"<br>");
+      document.write("Password : "+password+"<br>");
+      document.write("Confirm password :"+cmpassword+"<br>");
+    }
+  </script>
+</head>
+
+<body>
+  <form>
+    <div class="container">
+    <div class="form">
+      <h2>Registration Form</h2>
+
+      <label for="Fname">First Name</label>
+      <input type="text" class="form-control" id="Fname" placeholder="Enter Your First Name" required>
+
+      <lable for="Lname">Last Name</lable>
+      <input type="text" class="form-control" id="Lname" placeholder="Enter Your Last Name" required>
+
+      <label for="Email">Email</label>
+      <input type="email" class="form-control" id="Email" placeholder="Enter Email" required>
+
+      <label for="Password">Password</label>
+      <input type="password" class="form-control" id="Password" placeholder="Enter Password" required>
+
+      <label for="Cmpassword">Confirm Password</label>
+      <input type="cmpassword" class="form-control" id="Cmpassword" placeholder="Re-type Password" required>
+
+      <br><button class="btn" onclick="takevalues()">Submit</button>
+    </div>
+    </div>
+  </form>
+</body>
+
+</html>
