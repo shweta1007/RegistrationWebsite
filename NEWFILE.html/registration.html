@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Student Registration Form
+</title>
+<link rel="stylesheet" href="style3.css">
+
+</html>
+
+<body>
+    <div class="container">
+        <form action="/registration" method="POST">
+            <h2> Registration Form </h2>
+            <div class="form-group">
+                <label for="middlename" class="fname">First Name :</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+
+                <label for="middlename" class="mname">Middle Name :</label>
+                <input type="text" id="mname" name="mname" placeholder="Enter your middle name" required>
+
+                <label for="middlename" class="lname">Last Name :</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group"><br>
+                <label for="emailid"> Email id :</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address"
+                    required>
+            </div>
+            <div class="form-group">
+                <label> Profile Picture : </label>
+                <input type="file" id="profile" name="profile" placeholder="Add your profile picture here">
+            </div>
+            <div class="form-group">
+                <label for="address">Address :</label>
+                <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="city" class="city"> City :</label>
+                <input type="text" id="city" class="form-control" name="city" placeholder="Enter your city" required>
+                <label for="state" class="state"> State :</label>
+                <input type="text" id="state" class="form-control" name="state" placeholder="Enter your state" required>
+                <label for="country" class="country"> Country :</label>
+                <input type="text" id="country" class="form-control" name="country" placeholder="Enter your country"
+                    required>
+            </div>
+            <div class="form-group"><br>
+                <label for="contact"> Contact Number :</label>
+                <input type="text" class="form-control" id="contact" name="contact"
+                    placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="dateofbirth" class="date1">Date Of Birth :</label>
+                <input type="date" class="form-control" id="dateofbirth" name="dateofbirth"
+                    placeholder="Enter your date of birth" required>
+                <label for="dateofjoin" class="date2">Date Of Joining :</label>
+                <input type="date" class="form-control" id="dateofjoin" name="dateofjoin"
+                    placeholder="Enter date of join" required>
+            </div>
+
+            <div class="form-group">
+                <p>Gender :</p>
+
+                <input type="radio" class="form-control" id="female" name="gender" placeholder="female">
+                <label for="gender">Female</label>
+                <input type="radio" class="form-control" id="male" name="gender" placeholder="male">
+                <label for="gender">Male</label>
+            </div>
+            <div class="form-group" area-required="Hobbies">
+                <p>Hobbies :</p>
+
+                <input type="checkbox" class="form-control" id="cricket" name="hobbies" placeholder="cricket">
+                <label for="hobbies">Cricket</label>
+
+                <input type="checkbox" class="form-control" id="singing" name="hobbies" placeholder="singing">
+                <label for="hobbies">Singing</label>
+
+                <input type="checkbox" class="form-control" id="music" name="hobbies" placeholder="music">
+                <label for="hobbies">Dancing</label>
+
+                <div class="textarea">
+                    <label for="about">About :</label>
+                    <textarea name="about" class="form-control" id="about" cols="50" rows="7"
+                        placeholder="explain about yourself"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn" value="registration">register</button>
+        </form>
+    </div>
+</body>
